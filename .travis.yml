@@ -5,6 +5,9 @@ language: python
 python:
   - "2.7"
   - "3.4"
+  - "3.5"
+  - "3.6-dev"
+  - "pypy"
 
 env:
   - MODE=flake8
@@ -24,6 +27,10 @@ matrix:
     - python: "3.4"
       env: MODE=flake8
     - python: "3.4"
+      env: MODE=flake8-strict
+    - python: "3.5"
+      env: MODE=flake8-strict
+    - python: "3.6"
       env: MODE=flake8-strict
 
 addons:
